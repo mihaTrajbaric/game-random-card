@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your random card is...</title>
+</head>
+<body>
+
+<script>
+// List of URLs to randomly choose from
+const urlList = [
+    'https://www.google.com/',
+    'https://siol.net/',
+    'https://www.rtvslo.si/',
+    // Add more URLs as needed
+];
+
+// Function to get a random URL from the list
+function getRandomUrl() {
+    const randomIndex = Math.floor(Math.random() * urlList.length);
+    return urlList[randomIndex];
+}
+
+// Redirect to a random URL
+window.location.href = getRandomUrl();
+</script>
+
+</body>
+</html>
+
